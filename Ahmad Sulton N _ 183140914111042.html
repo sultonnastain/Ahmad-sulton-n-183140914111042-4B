@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width , initial-scale.0">
+        <title>UTS</title>
+        
+    </head>
+
+    <style>
+        .sidebar1{
+            width:15% ;
+            height: 100%;
+            background-color:#44749d;
+            position: fixed;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            transition: width 1s;
+        }
+
+        .main1{
+           
+            background-color: white;
+            margin-left: 200px;
+            overflow: auto;
+        }
+
+
+        .sidebar{
+            width:0px ;
+            height:100%;
+            background-color: #44749d;
+            position: fixed;
+            overflow: auto;
+            transition: width 0.6s;
+        }
+
+        .main{
+            width: 53%px;
+            height: 500px;
+            background-color: white;
+            /* margin-left: 200px; */
+        }
+        .upper{
+            height: 5%;
+            background-color: #c6d4e1;
+            float: left;
+        }
+
+        .sidebar1 span{
+            float: right;
+        }
+        .gallery{
+            width: 160px;
+            height: 120px;
+            background-color:#c6d4e1;
+            float: left;
+            margin: 5px 5px 5px 5px;
+            background-size: cover;
+            
+        }
+        .gallery2{
+            width: 670px;
+            height: 350px;
+            background-color:#c6d4e1;
+            margin: 5px 5px 5px 5px;
+            float: left;
+            background-size: cover;
+            
+        }
+        .gallery3{
+            width: 670px;
+            height: 180px;
+            background-color:#c6d4e1;
+            margin: 5px 5px 5px 5px;
+            float: left;
+            background-size: cover;
+            
+        }
+        .pembungkusgallery{
+            width: 700px;
+        }
+
+        .container2 {
+      width: 15%;
+      height: 100%;
+      margin-top: 10px;
+      margin-left: 750px;
+      position: relative;
+    }
+
+    .kotak4 {
+      width: 100%;
+      height: 326px;
+      margin: 10px;
+      background-color: #ebe7e0;
+    }
+
+    .kotak5 {
+      width: 100%;
+      height: 326px;
+      margin: 10px;
+      background-color: #ebe7e0;
+    }
+
+
+
+
+    </style>
+
+    <body>
+        
+ 
+
+    <div id="klik1" class="sidebar">
+        <div class="upper"><span style="font-size: 30px; cursor: pointer;" onclick="openClose()&tombol2()">X</span></div>
+
+    </div>
+
+    <div id="klik2" class="main">
+        <span  style="font-size: 30px; cursor: pointer;" onclick="openNav()&tombol1()">&#9776</span>
+        <div class="pembungkusgallery">
+            <div id="tombol">
+            
+            <div id="klik"class="gallery"  onClick="tombol1()">
+               
+            </div>
+    
+            <div class="gallery">
+               
+               
+            </div>
+            <div class="gallery">
+                
+            </div>
+            <div class="gallery">
+                
+            </div>
+            </div>
+            
+    <div class="gallery2">
+                
+    </div>
+
+    <div class="gallery3">
+                
+    </div>
+
+    </div>
+    <div class="pembungkusgallery2">
+        <div class="gallery4">
+        </div>
+        <div class="gallery5">
+        </div>
+        
+
+        <div class="container2">
+
+            <div class="kotak4"></div>
+            <div class="kotak5"></div>
+      
+          </div>
+
+
+
+</body>
+
+<script>
+ function openNav(){
+    
+    
+    document.getElementById('klik1').className="sidebar1";
+    document.getElementById('klik2').className="main1";
+    }
+
+    function openClose(){
+        document.getElementById('klik1').className="sidebar";
+        document.getElementById('klik2').className="main";
+
+    }
+    function tombol1() {
+            document.getElementById(klik.style.backgroundColor="#1976D2");
+        }
+        function tombol2() {
+            document.getElementById(klik.style.backgroundColor="#c6d4e1");
+        }
+
+
+</script>
+</html>
